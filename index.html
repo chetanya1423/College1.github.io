@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Information</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('Img/272291_5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+.btn {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(31, 30, 30);
+}
+
+.container {
+    margin: 0px auto;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+    margin-top: -82px;
+}
+
+.form-group input {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.container h1 {
+    text-align: center;
+        color: black;
+}
+.gen1 {
+    width: 107px;
+    float: left;
+    margin: 0px 10px;
+    margin-bottom: 17px;
+}
+.ungen1{
+
+}
+.container button {
+    display: block;
+    width: 74%;
+    margin: 33px auto;
+    margin-left: 97px;
+}
+.form-group1 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.head{
+ margin: 10px auto;
+}
+.head h1{
+text-align: center;
+    color: #ffc7c7;
+}
+label{
+    color: palevioletred;
+    font-weight: bold;
+}
+.logo{
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+#course{
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+</style>
+
+<body>
+<div class="head">
+    <h1>Aligarh college of Engineering & Technology</h1>
+</div>
+<div class="logo">
+    <img src="Img/cropped-Aligarh-Permlet-scaled-1.jpg" alt="">
+</div>
+<div class="container">
+    <h1>Student Information</h1>
+    <form action="">
+        <label  for="firstname">Full Name:- </label>
+        <div class="form-group">
+             <input type="text" name="" placeholder="Enter your Full Name" id="firstname">
+        </div>
+        <label  for="secondname">Fathers Name:- </label>
+        <div class="form-group">
+             <input type="text" name="" placeholder="Enter your Fathers Name" id="secondname">
+        </div>
+        <label for="rno">Roll no. :-</label>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Roll Number" id="rno">
+        </div>    
+        <label for="dob">D.O.B:-</label>
+        <div class="form-group">
+            <input type="date" name="" placeholder="Enter your Age" id="dob">
+        </div>
+        <label for="gender">Gender:-</label>
+        <div class="form-group1">
+           
+           <div class="gen1"> Male <input class="ungen1" type="radio" name="myGender"></div> <div class="gen1"> Female <input class="ungen1" type="radio" name="myGender"></div><div class="gen1"> Other <input class="ungen1" type="radio" name="myGender"></div>
+           
+        </div>
+        <label for="locality">Address:-</label>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Address" id="locality">
+        </div>
+        <label for="email">Email:-</label>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email Id" id="email">
+        </div>
+        <label for="course"> Course :-</label>
+        <div class="form-group">
+            
+            <select name="course" id="course" >
+                <option value="" disabled selected hidden>Select Course</option>
+                <option value="B.tech">B.tech</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="Pharmacy">Pharmacy</option>
+            </select>
+        </div>  
+        <label for="no">Mobile no. :-</label>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone Number" id="no">
+        </div>  
+         
+    </form>
+    <button class="btn">Submit:-</button>
+</div>
+</body>
+
+</html>
